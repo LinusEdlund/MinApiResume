@@ -5,6 +5,6 @@
     [WorkPlace] NVARCHAR(50) NULL, 
     [Range] NVARCHAR(50) NULL, 
     [Responsibilities] NVARCHAR(50) NULL, 
-    [PersonId] NCHAR(10) NULL, 
+    [PersonId] INT NULL, 
     CONSTRAINT [FK_Experience_Person] FOREIGN KEY ([PersonId]) REFERENCES [Person]([Id])
 )

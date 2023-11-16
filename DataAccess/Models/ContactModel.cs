@@ -6,5 +6,6 @@ public class ContactModel
   public string Phone { get; set; } = string.Empty;
   public string GitHub { get; set; } = string.Empty;
   public string LinkedIn { get; set; } = string.Empty;
+  public int PersonId { get; set; }
 
 }

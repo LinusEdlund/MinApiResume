@@ -10,6 +10,5 @@ public class PersonModel
   public List<ContactModel> Contacts { get; set; } = new();
   public List<ExperienceModel> Experiences { get; set; } = new();
   public List<ProjectModel> Projects { get; set; } = new();
-  public List<RouteModel> Routes { get; set; } = new();
 
 }

@@ -57,16 +57,21 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables\" />
+    <Folder Include="StoredProcedures\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Person.sql" />
-    <Build Include="Tables\Route.sql" />
     <Build Include="Tables\Contact.sql" />
     <Build Include="Tables\Experience.sql" />
     <Build Include="Tables\Project.sql" />
     <Build Include="Tables\Stack.sql" />
+    <Build Include="StoredProcedures\spPerson_GetAll.sql" />
+    <Build Include="StoredProcedures\spContact_GetAll.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Database.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>

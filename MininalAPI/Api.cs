@@ -1,4 +1,4 @@
-﻿using DataAccess.Data;
+﻿using DataAccess.Data.Interfaces;
 
 namespace MininalAPI;
 
@@ -9,6 +9,7 @@ public static class Api
     app.MapGet("/Contacts", GetContacts);
     app.MapGet("/Experience", GetExperience);
     app.MapGet("/Project", GetProject);
+    app.MapGet("/People", GetPeople);
   }
 
   private static async Task<IResult> GetContacts(IContactData data)
@@ -40,6 +41,18 @@ public static class Api
     try
     {
       return Results.Ok(await data.GetProjects());
+    }
+    catch (Exception ex)
+    {
+      return Results.Problem(ex.Message);
+    }
+  }
+
+  private static async Task<IResult> GetPeople(IPersonData data)
+  {
+    try
+    {
+      return Results.Ok(await data.GetPeoples());
     }
     catch (Exception ex)
     {

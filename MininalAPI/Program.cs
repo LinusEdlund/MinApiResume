@@ -1,4 +1,5 @@
 using DataAccess.Data;
+using DataAccess.Data.Interfaces;
 using DataAccess.DbAccess;
 using MininalAPI;
 
@@ -12,6 +13,7 @@ builder.Services.AddSingleton<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddSingleton<IContactData, ContactData>();
 builder.Services.AddSingleton<IExperienceData, ExperienceData>();
 builder.Services.AddSingleton<IProjectData, ProjectData>();
+builder.Services.AddSingleton<IPersonData, PersonData>();
 
 
 

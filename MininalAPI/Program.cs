@@ -11,6 +11,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddSingleton<IContactData, ContactData>();
 builder.Services.AddSingleton<IExperienceData, ExperienceData>();
+builder.Services.AddSingleton<IProjectData, ProjectData>();
 
 
 

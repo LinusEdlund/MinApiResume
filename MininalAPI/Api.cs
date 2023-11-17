@@ -8,6 +8,7 @@ public static class Api
   {
     app.MapGet("/Contacts", GetContacts);
     app.MapGet("/Experience", GetExperience);
+    app.MapGet("/Project", GetProject);
   }
 
   private static async Task<IResult> GetContacts(IContactData data)
@@ -27,6 +28,18 @@ public static class Api
     try
     {
       return Results.Ok(await data.GetExperience());
+    }
+    catch (Exception ex)
+    {
+      return Results.Problem(ex.Message);
+    }
+  }
+
+  private static async Task<IResult> GetProject(IProjectData data)
+  {
+    try
+    {
+      return Results.Ok(await data.GetProjects());
     }
     catch (Exception ex)
     {

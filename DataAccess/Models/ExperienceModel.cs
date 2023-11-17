@@ -6,5 +6,5 @@ public class ExperienceModel
   public string WorkPlace { get; set; } = string.Empty;
   public string Range { get; set; } = string.Empty;
   public string Responsibilities { get; set; } = string.Empty;
-
+  public int PersonId { get; set; }
 }

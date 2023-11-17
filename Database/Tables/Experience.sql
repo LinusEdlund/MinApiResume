@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Experience]
 (
-  [Id] INT NOT NULL PRIMARY KEY, 
+  [Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Title] NVARCHAR(50) NULL, 
     [WorkPlace] NVARCHAR(50) NULL, 
     [Range] NVARCHAR(50) NULL, 

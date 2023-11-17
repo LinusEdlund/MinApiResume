@@ -67,6 +67,7 @@
     <Build Include="Tables\Stack.sql" />
     <Build Include="StoredProcedures\spPerson_GetAll.sql" />
     <Build Include="StoredProcedures\spContact_GetAll.sql" />
+    <Build Include="StoredProcedures\spExperience_GetAll.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Database.publish.xml" />
